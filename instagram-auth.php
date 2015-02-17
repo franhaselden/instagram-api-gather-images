@@ -18,7 +18,8 @@ curl_close($curl);
 $pics = json_decode($pictures,true);
 
 // display the url of the last image in standard resolution
-echo $pics['data'][0]['images']['standard_resolution']['url'];
+$pic = $pics['data'][0]['images']['standard_resolution']['url'];
+echo '<img src="'.$pic.'" />';
 
 
 
